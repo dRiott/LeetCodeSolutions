@@ -35,7 +35,7 @@ class GrowAndShrinkWindow {
     }
 
     private int[] populate(String t) {
-        int[] freq = new int[58];
+        int[] freq = new int[58]; // ASCII table has A-Z, 6 other chars, then a-z
         for (char c : t.toCharArray()) {
             freq[c-'A']++;
         }
