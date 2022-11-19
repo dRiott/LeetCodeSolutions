@@ -27,9 +27,9 @@ class BFSFourDirectionsArray {
             final int currC = q.poll()[1];
 
             // search in all directions
-            for (int k = 0; k < 4; ++k) {
-                final int nextR = currR + dirs[k]; 
-                final int nextC = currC + dirs[k + 1];
+            for (int d = 0; d < 4; d++) {
+                final int nextR = currR + dirs[d]; 
+                final int nextC = currC + dirs[d + 1];
                 
                 if (nextR < 0 || nextR == grid.length 
                     || nextC < 0 || nextC == grid[0].length
