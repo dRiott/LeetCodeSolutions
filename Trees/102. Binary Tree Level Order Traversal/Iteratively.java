@@ -4,7 +4,7 @@ class Iteratively {
         List<Integer> level = new ArrayList<>();
       
         Deque<TreeNode> q = new ArrayDeque<>();
-        if (root == null) q.addLast(root);
+        if (root != null) q.addLast(root);
 
         while (!q.isEmpty()) {
           
