@@ -18,8 +18,9 @@ class BFSFourDirectionsArray {
     }
 
     private void bfs(char[][] grid, int r, int c) {
-        Queue<int[]> q = new ArrayDeque<>();
         grid[r][c] = 'v'; // Mark 'v' for visited
+
+        Queue<int[]> q = new ArrayDeque<>();
         q.offer(new int[] {r, c});
 
         while (!q.isEmpty()) {
