@@ -9,10 +9,8 @@ class Sorting {
         for (int i = 1; i < nums.length; i++) {
             if (nums[i-1] == nums[i]) continue;
             if (nums[i-1] + 1 == nums[i]) {
-                
                 count++;
                 max = Math.max(max, count);
-                //System.out.printf("count=%d, max=%d%n", count, max);
             } else {
                 count = 1;
             }
