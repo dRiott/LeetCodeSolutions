@@ -220,3 +220,4 @@ func multiplier() func([]int) int64 {
 		return prod
 	}
 }
+
