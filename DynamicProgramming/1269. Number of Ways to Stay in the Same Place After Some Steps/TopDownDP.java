@@ -16,7 +16,8 @@ class TopDownDP {
     int[][] memo;
 
     public int numWays(int steps, int arrLen) {
-        
+        // Larger values of arrLen (greater than steps) are pointless
+        // because we could not reach those states due to running out of steps 
         maxDistance = Math.min(steps, arrLen);
 
         // initialize memo array with -1 as possible moves, uncalculated
