@@ -1,7 +1,8 @@
 /**
  * Learned:
  *   - You had the DP approach, but at first tried a single-dimension array.
- *   - A 2d array is required: first dimension for string length n, second for each vowel
+ *   - A 2d array is "classic DP approach": first dimension for string length n, second for each vowel
+ *   -   (see the BottomUpSpaceOptimized.java solution for the single-dimension, i.e. space-optimized, approach).
  *   - In DP, sometimes it's useful to think about the reverse order of operations:
  *   -   here, if a vowel is **the last one in a string**, calculate permutations to get to it
  *   - Hence, the vowel mapping given in the problem should be reversed.
