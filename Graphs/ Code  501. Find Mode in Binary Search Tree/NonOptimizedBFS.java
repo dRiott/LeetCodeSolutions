@@ -13,7 +13,7 @@
  *     }
  * }
  */
-class NonOptimizedDFS {
+class NonOptimizedBFS {
     public int[] findMode(TreeNode root) {
         Map<Integer,Integer> val = new HashMap<>();
 
