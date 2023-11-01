@@ -1,4 +1,8 @@
 /**
+ * Learned:
+ *   - Although BFS usually uses a Queue, here I'm using a Deque.
+ *   - Remember, BFS visits them in level-order, hence adding node left and right immediately
+ *   - Deque's _add_ method is equivalent to _addLast_.
  * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;
@@ -13,7 +17,7 @@
  *     }
  * }
  */
-class NonOptimizedBFS {
+class NonOptimizedIterativeBFS {
     public int[] findMode(TreeNode root) {
         Map<Integer,Integer> val = new HashMap<>();
 
