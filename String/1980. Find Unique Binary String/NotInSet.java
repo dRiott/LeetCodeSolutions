@@ -1,3 +1,10 @@
+/** 
+ * Learned:
+ *   - To convert into an integer, consider the radix parameter of Integer.parseInt (here, 2)
+ *   - Integer.parseInt("101", 2); // returns 5
+ *   - To convert an integer into a binary string: Integer.toBinaryString(5); // returns "101"
+ *   - Careful, Integer.toBinaryString doesn't include unnecessary 0s as prefixes... this problem requires that.
+ */
 class NotInSet {
     public String findDifferentBinaryString(String[] nums) {
         int n = nums.length;
