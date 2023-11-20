@@ -1,3 +1,7 @@
+/**
+ * Learned:
+ *   - Small optimization over my previous solution, which incremented positively through garbage, increasing last* counters
+ */
 class Solution {
     public int garbageCollection(String[] garbage, int[] travel) {
         // consider time it takes to collect any garbage type in one go
