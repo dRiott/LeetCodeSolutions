@@ -3,7 +3,7 @@
  * Note "checking for seen positions to invalidate" is the boolean[] of other solutions.
  * Here, we cheat with a hashset instead; a little easier.
  */
-class Solution {
+class WithoutSorting {
     public List<Boolean> checkArithmeticSubarrays(int[] nums, int[] l, int[] r) {
         // l and r represent a subsequence of nums
         // "sort l (moving r correctly)?"
