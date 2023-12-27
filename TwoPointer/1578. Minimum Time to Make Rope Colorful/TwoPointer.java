@@ -1,5 +1,8 @@
 class TwoPointer {
-
+    /*
+     * Each char in colors is a balloon of that color.
+     * Minimum cost it takes to remove balloons until no consequtive colors exist.
+     */
     public int minCost(String colors, int[] neededTime) {
         int i = 0, j = 0;
         int res = 0;
