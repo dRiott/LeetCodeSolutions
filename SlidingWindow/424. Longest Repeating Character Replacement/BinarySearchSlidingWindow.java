@@ -1,20 +1,18 @@
 class BinarySearchSlidingWindow {
     public int characterReplacement(String s, int k) {
         
-        int lo = 1, hi = s.length() + 1, max = 0;
+        int lo = 1, hi = s.length() + 1;
         while (lo+1 < hi) {
             int mid = (hi-lo)/2 + lo;
 
             if (lengthValid(s, k, mid)) {
-
-                max = Math.max(max, mid);
                 lo = mid;
             } else {
                 hi = mid;
             }
         }
 
-        return max;
+        return lo;
     }
 
     private boolean lengthValid(String s, int k, int mid) {
