@@ -21,7 +21,11 @@ public class Backtracking {
             if (prefix[i] % k == 0) {
                 return true;
             }
+            
             int j = i - 2;
+
+            // Attn: I missed this secondary condition, checking that the diff is GTE k
+            // We prevent backtracking when we know there will never be a potential solution
             while ((j >= 0) && (prefix[i] - prefix[j] >= k)) {
                 if ((prefix[i] - prefix[j]) % k == 0) {
                     return true;
