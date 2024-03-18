@@ -1,4 +1,7 @@
 class Solution {
+    // "Kadane's Algorithm"
+
+    // Given an integer array nums, find the subarray with the largest sum, and return its sum.
     public int maxSubArray(int[] nums) {
         // any subarray whose sum is positive is worth keeping
         // Whenever the sum of the array is negative, we know the entire array is not worth keeping
