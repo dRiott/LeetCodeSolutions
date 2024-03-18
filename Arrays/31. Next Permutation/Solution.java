@@ -16,8 +16,12 @@ class Solution {
         // only do a swap if non-ascending sorted (e.g. 3,2,1 --> don't swap any, just sort entire array)
         if (i >= 0) {
             // find the index of the next largest number compared to nums[i] ("pivot")
+            
             int nextLargestIdx = i+1;
             int pivot = nums[i];
+
+            // TODO can be improved by stopping once a match is found, since the tail of array must be
+            // in ascending order if approached in reverse
             for (int j = i+1; j < nums.length; j++) {
                 if (nums[j] > pivot && nums[j] < nums[nextLargestIdx]) {
                     nextLargestIdx = j;
@@ -30,6 +34,7 @@ class Solution {
             nums[nextLargestIdx] = temp;
         }
 
+        // Because the array is in descending order from i+1 to end, we can simply reverse it, instead of sort
         Arrays.sort(nums, i+1, nums.length);
     }
 }
