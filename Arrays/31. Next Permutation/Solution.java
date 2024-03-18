@@ -34,7 +34,7 @@ class Solution {
             nums[nextLargestIdx] = temp;
         }
 
-        // Because the array is in descending order from i+1 to end, we can simply reverse it, instead of sort
+        // TODO b/c array is in descending order from i+1 to end, we can simply reverse it, instead of sort
         Arrays.sort(nums, i+1, nums.length);
     }
 }
